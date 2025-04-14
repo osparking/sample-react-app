@@ -1,6 +1,12 @@
 import React from "react";
 
 export const Home = () => {
+  const googleLogin = () => {
+
+  }
+  const githubLogin = () => {
+
+  }
   return (
     <div>
       <h2>소셜 로그인 링크</h2>
