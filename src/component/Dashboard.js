@@ -14,10 +14,14 @@ export const Dashboard = () => {
   return (
     <div>
       <h1>Dashboard</h1>
-      <div>
-        <p><strong>이름: </strong></p>
-        <p><strong>이메일: </strong></p>
-      </div>
+      {user ? (
+        <div>
+          <p><strong>이름: </strong>{user.name}</p>
+          <p><strong>이메일: </strong>{user.email}</p>
+        </div>
+      ) : (
+        <p>유저 정보 읽는 중...</p>
+      )}
     </div>
   )
 }
