@@ -1,6 +1,11 @@
 import React from 'react'
 
 export const Dashboard = () => {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+  }, []);
+
   return (
     <div>
       <h1>Dashboard</h1>
