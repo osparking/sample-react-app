@@ -5,7 +5,7 @@ export const Dashboard = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.get('<>', { withCredentials: true })
+    axios.get('http://localhost:8080/user-info', { withCredentials: true })
       .then(response => {
         setUser(response.data);
       });
