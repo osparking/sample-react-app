@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+export const Home = () => {
   return (
     <div>
       <h2>소셜 로그인 링크</h2>
