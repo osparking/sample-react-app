@@ -1,9 +1,14 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
 
 export const Dashboard = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    axios.get('<>', { withCredentials: true })
+      .then(response => {
+        setUser(response.data);
+      });
   }, []);
 
   return (
