@@ -2,9 +2,11 @@ import React from "react";
 
 export const Home = () => {
   const googleLogin = () => {
+    localStorage.setItem("social", "google");
     window.location.href = "http://localhost:8080/oauth2/authorization/google";
   }
   const githubLogin = () => {
+    localStorage.setItem("social", "github");
     window.location.href = "http://localhost:8080/oauth2/authorization/github";
   }
   return (
