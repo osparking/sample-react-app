@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 export const Dashboard = () => {
   const [user, setUser] = useState(null);
@@ -21,6 +21,8 @@ export const Dashboard = () => {
         <div>
           <p><strong>이름: </strong>{user.name}</p>
           <p><strong>이메일: </strong>{user.email}</p>
+          {user.picture && <img src={user.picture} alt="프로필 사진"
+            referrerPolicy="no-referrer" />}
         </div>
       ) : (
         <p>유저 정보 읽는 중...</p>
