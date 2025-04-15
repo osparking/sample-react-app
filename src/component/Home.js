@@ -20,9 +20,9 @@ export const Home = () => {
 
   return (
     <div style={centerize}>
-      <h2>소셜 로그인 링크</h2>
-      <button onClick={googleLogin}>구글</button>
-      <button onClick={githubLogin}>깃허브</button>
+      <h2>OAuth 시범 소셜 로그인</h2>
+      <button class="button" onClick={googleLogin} style={{margin: '10px'}}>구 글</button>
+      <button class="button" onClick={githubLogin}>깃허브</button>
     </div>
   )
 }
