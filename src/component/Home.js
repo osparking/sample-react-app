@@ -1,4 +1,7 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
+
 
 export const Home = () => {
   const googleLogin = () => {
@@ -21,8 +24,10 @@ export const Home = () => {
   return (
     <div style={centerize}>
       <h2>OAuth 시범 소셜 로그인</h2>
-      <button class="button" onClick={googleLogin} style={{margin: '10px'}}>구 글</button>
-      <button class="button" onClick={githubLogin}>깃허브</button>
+      <button class="button" onClick={googleLogin} style={{ margin: '10px' }}>
+        <FcGoogle />&nbsp;구 글</button>
+      <button class="button" onClick={githubLogin}>
+        <BsGithub />깃허브</button>
     </div>
   )
 }
